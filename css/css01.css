@@ -1,0 +1,382 @@
+/* ----------- ページ全体 ----------- */
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Sawarabi Gothic', sans-serif,'Miltonian Tattoo', cursive;
+    background-color: #E3DF93;
+    margin: 0;
+    padding: 0;
+    }
+
+a{
+    color:#DF3500;
+    text-decoration: none;
+}
+
+ol,ul,li{
+    list-style-type: none;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    color:#F86001; 
+}
+
+div#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Miltonian Tattoo', cursive;
+}
+
+main{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: #333;
+}
+
+/* ----------- ヘッダー・メニュー部 ----------- */
+header{
+    width: 100%;
+    height: 60px;
+    padding: 5px 40px;
+    font-size: 21px;
+}
+
+nav ul{
+    display: block;
+    color:#DF3500;
+    height:40px;
+    line-height: 40px;
+}
+
+nav ul li a{
+    float: left;
+    width:125px;
+}
+
+nav ul li a.home{
+    background: url(../img/icon_home.png) no-repeat left center;
+    padding-left: 55px;
+}
+
+nav ul li a.profile{
+    background: url(../img/icon_profile.png) no-repeat right center;
+    float: right;
+}
+
+
+/* ------ トップページ　メインビジュアル ------ */
+div#content{
+    width: 100%;
+    height: auto;
+    background: url(../img/potechicat.png) no-repeat 8% top;
+}
+
+div.content_title{
+    width: 500px;
+    height: 350px;
+    margin-left: 300px;
+}
+
+div.content_title h1{
+    margin: 0;
+    font-size: 68px;
+    text-align: left;
+    line-height: 1.2em;
+    color: #DF3500;
+}
+
+div.content_title h2{
+    display: block;
+    width: 380px;
+    height: 130px;
+    margin: 0;
+    padding: 45px 60px 0 90px;
+    font-size: 14px;
+    text-align: left;
+    background: url(../img/fukidasi_a.png) no-repeat left 10px top;
+}
+
+
+/* ----------- トップページ　作品一覧の部分 ----------- */
+section#works{
+    width: 100%;
+}
+
+section#works dl{
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 150px;
+    margin-right: 23px;
+    margin-left: 23px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-top: 25px solid #782000;
+    border-radius: 5px;
+}
+
+section#works dt{
+    position: relative;
+    top: -20px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+section#works dl.case01{
+    background:url(../works/img/tenroku.png) no-repeat center 5%;
+    background-size: cover;
+}
+section#works dl.case02{
+    background:url(../works/img/valentine.png) no-repeat center 15%;
+    background-size: cover;
+}
+section#works dl.case03{
+    background:url(../works/img/pcschool.png) no-repeat center 5%;
+    background-size: cover;
+}
+section#works dl.case04{
+    background:url(../works/img/dentalclinic.png) no-repeat center 5%;
+    background-size: cover;
+}
+section#works dl.case05{
+    background:url(../img/comingsoon.png) no-repeat center center;
+}
+
+section#works dd{
+    position: relative;
+    z-index: 2;
+    margin-inline-start: 0;
+    top: 100px;
+    text-align: center;
+}
+
+section#works dd a{
+    display: block;
+    width: 220px;
+    height: 30px;
+    background-color: #DF3500;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    line-height: 30px;
+}
+
+
+/* ----------- プロフィール・作品紹介 共通 ----------- */
+section{
+    width: 700px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+section h1{
+    font-weight: normal;
+    margin: 0;
+}
+
+section h2{
+    font-size: 18px;
+}
+
+section h3{
+    font-size: 14px;
+}
+
+/* ----------- 作品紹介・タイトル下 部分 ----------- */
+dl.memo {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: block;
+    height: 65px;
+}
+
+dl.memo dt {
+    width: 100px;
+    height: inherit;
+    line-height: 65px;
+    padding-left: 0;
+    float: left;
+    color: #fff;
+    text-align: center;
+    background: url(../img/bg_memo01.png) no-repeat 3px 10px;
+}
+
+dl.memo dd{
+    margin: 0;
+    float: left;
+    height: inherit;
+    min-width: 180px;
+    padding-right: 10px;
+    line-height: 65px;
+}
+
+dl#point{
+    width: 100%;
+}
+
+dl#point dt{
+    height: 50px;
+    line-height: 45px;
+    padding-left: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    background: url(../img/bg_point.png) no-repeat 5px center;
+}
+
+dl#point dd{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+div#capture{
+    clear: both;
+}
+
+div#capture p{
+    text-align: center;
+    color: #fff;
+}
+
+div#capture img{
+    width:700px;
+    height:600px;
+    object-fit:none;
+    object-position:50% 0;
+    border-radius: 10px;
+}
+
+/* ----- プロフィール・ヒストリー・スキル・ポイント ----- */
+section#prof dl dt{
+    margin-left: 10px;
+    padding-left: 20px;
+    height:65px;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    line-height: 60px;
+    color: #fff;
+}
+
+section#prof dl dd{
+    margin-bottom: 40px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+div#prof_title{
+    margin: inherit;
+    height: 350px;
+    background: url(../img/drumcat.png) no-repeat center 60px;
+}
+
+dt.pr{
+    background: url(../img/bg_profile.png) no-repeat left center;
+}
+
+dt.history{
+    background: url(../img/bg_history.png) no-repeat left center;
+}
+
+dt.skills{
+    background: url(../img/bg_skills.png) no-repeat left center;
+}
+
+div.it_skills{
+    width: 100%;
+    height: auto;
+    margin-left: 25px;
+}
+
+div.it_skills dd{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 320px;
+    background-color: #E3FFBD;
+    border: 2px solid #666;
+    border-radius: 10px;
+}
+
+div.it_skills p{
+    height: 3em;
+    margin: 0;
+    color: #DF3500;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 21px;
+}
+
+dd p.dtp{
+    padding-right: 105px;
+    background-image: url(../profile/img/adb-photoshop_icon-icons.com_50960.png),url(../profile/img/adb-illustrator_icon-icons.com_50964.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right top , 180px top;
+}
+
+dd p.web{
+    line-height: 30px;
+    background-image: url(../profile/img/css3-01_icon-icons.com_50918.png),url(../profile/img/html5-01_icon-icons.com_50875.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right top , 180px top;
+}
+
+
+/* ----------- 戻るボタン部分 ----------- */
+div#button{
+    clear: both;
+    margin-top: 30px;
+}
+
+div#button a{
+    display: block;
+    width: 178px;
+    height: 60px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    background: url(../img/bt_back.png) no-repeat center center;
+}
+
+div#button a:hover{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: #666 1px 1px;
+}
+
+
+
+/* ----------- フッター部 ----------- */
+footer{
+    clear: both;
+    height: 150px;
+    padding: 30px;
+    color: #782000;
+}
+
+footer div{
+    height: 150px;
+    line-height: 150px;
+    background: url(../img/reluxneco.png) no-repeat right center;
+}
+
+footer h3{
+    display: inline;
+    font-size: 26px;
+    margin-right: 0.5em;
+}
+
+footer p{
+    display: inline;
+    font-size: 12px;
+}
