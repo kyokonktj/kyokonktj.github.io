@@ -58,12 +58,12 @@ nav ul li a{
 }
 
 nav ul li a.home{
-    background: url(../img/icon_home.png) no-repeat left center;
+    background: url(../img/home.svg) no-repeat left center;
     padding-left: 55px;
 }
 
 nav ul li a.profile{
-    background: url(../img/icon_profile.png) no-repeat right center;
+    background: url(../img/profile.svg) no-repeat right center;
     float: right;
 }
 
