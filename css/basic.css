@@ -43,8 +43,6 @@ div#wrapper{
     font-family: 'Miltonian Tattoo', cursive;
 }
 
-
-
 /* ----------- ヘッダー・メニュー部 ----------- */
 header{
     font-size: 1.4em;
@@ -334,7 +332,7 @@ div#prof_title{
 }
 
 dt.pr{
-    background: url(../profile/img/fukudasi_pr.svg) no-repeat left center;
+    background: url(../profile/img/fukidasi_pr.svg) no-repeat left center;
     background-size: contain;
 }
 
