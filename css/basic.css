@@ -38,6 +38,7 @@ h1{
 }
 
 div#wrapper{
+    max-width: 1000px;
     margin: 0 auto;
     font-family: 'Miltonian Tattoo', cursive;
 }
