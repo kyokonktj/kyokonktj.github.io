@@ -376,16 +376,25 @@ div.it_skills dd.dtp,dd.web{
 }
 
 dd.dtp p{
+    display: block;
+    width: 100%;
+    height: 3em;
     padding-right: 33%;
+    margin-bottom: 0.5em;
     background-image: url(../profile/img/adb-photoshop_icon-icons.com_50960.png),url(../profile/img/adb-illustrator_icon-icons.com_50964.png);
     background-repeat: no-repeat,no-repeat;
-    background-position: right top , 165px top;
+    background-position: right top , 9.5em top;
 }
 dd.web p{
-    line-height: 30px;
+    display: block;
+    width: 100%;
+    line-height: 3em;
+    padding-right: 50%;
+    margin-bottom: 0.5em;
     background-image: url(../profile/img/css3-01_icon-icons.com_50918.png),url(../profile/img/html5-01_icon-icons.com_50875.png);
     background-repeat: no-repeat,no-repeat;
-    background-position: right top , 165px top;
+    background-position: right top , 9.5em top;
+    background-size: contain;
 }
 
 
