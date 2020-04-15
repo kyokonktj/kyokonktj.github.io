@@ -8,19 +8,17 @@
 
 /* ----------- ページ全体 ----------- */
 html{
-    font-size: 100%;
+    font-size: 16px;
     line-height: 1.4em;
 }
 
 body {
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic','Sawarabi Gothic', sans-serif,'Miltonian Tattoo', cursive;
-    background-color: #EFE096;
     margin: 0;
     padding: 0;
     }
 
 a{
-    color:#DF3500;
     text-decoration: none;
 }
 
@@ -33,8 +31,7 @@ h1,h2,h3{
 }
 
 h1{
-    font-size: 2.5em;
-    color:#F86001; 
+    font-size: 2.5em;   
 }
 
 div#wrapper{
@@ -43,23 +40,40 @@ div#wrapper{
     font-family: 'Miltonian Tattoo', cursive;
 }
 
+/* 基本のカラー設定 */
+body{
+    background-color: #EFE096;
+}
+
+header,footer,a{
+    color: #df3500;
+}
+
+h1{
+    color:#F86001; 
+}
+
+main{
+    color: #333;
+}
+
 /* ----------- ヘッダー・メニュー部 ----------- */
 header{
     font-size: 1.4em;
 }
 
-nav ul{
-    display: block;
+nav{
     padding: 10px 25px;
-    color:#DF3500;
 }
 
-nav ul li a{
-    float: left;
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 nav ul li a.home{ 
-    line-height: 1.5em;  
+    line-height: 1.5em;
 }
 
 nav ul li a.home:before{
@@ -68,13 +82,12 @@ nav ul li a.home:before{
     width: 1.5em;
     height: 1.5em;
     margin-right: 0.3em;
-    background: url(../img/home.svg) no-repeat left center;
+    background: url(../img/common/home.svg) no-repeat left center;
     background-size: contain;
     float: left;
 }
 
 nav ul li a.profile{
-    float: right;
     line-height: 1.5em;
 }
 
@@ -84,7 +97,7 @@ nav ul li a.profile:after{
     width: 1.5em;
     height: 1.5em;
     margin-left: 0.3em;
-    background: url(../img/profile.svg) no-repeat right center;
+    background: url(../img/common/profile.svg) no-repeat right center;
     float: right;
 }
 
@@ -93,124 +106,124 @@ nav ul li a.profile:after{
 main{
     clear: both;
     padding-top: 30px;
-    color: #333;
 }
 
 div#content{
     width: 60%;
-    padding-left: 1em;
-    margin: 0 auto;   
+    margin: 0 auto 2em auto;
+    height: 250px;
+    background: url(../img/potechicat.png) no-repeat left top;
+    background-size: contain;
 }
 
-div.content_title{
-    width: 100%;
-    position: relative;
-    margin: 0;
+#content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 0 40%;
 }
 
-div.content_title h1{
-    margin: 0;
+#content div h1{
     text-align: left;
     font-size: 3.2em;
     line-height: 1.4em;
-    color: #DF3500;
+    margin: 0;
 }
 
-div.content_title h1::before{
-    content: '';
+#content div p{
     display: block;
-    width: 40%;
-    height: 7em;
-    background: url(../img/potechicat.png) no-repeat right top;
+    height: 90px;
+    overflow: hidden;
+    background: url(../img/common/fukidasi_intro.svg) no-repeat left bottom;
     background-size: contain;
-    float: left;
+    font-size: 0;
+    margin: 0;
 }
 
-div.caption{
-    width: 45%;
-    height: 8em;
-    background: url(../img/fukidasi_a.png) no-repeat left bottom;
-    background-size: contain;
-    position: absolute;
-    top: 85%;
-    left: 40%;
-}
-
-div.caption h2{
-    display: block;
-    width: 100%;
-    padding: 17% 10% 10% 23%;
-    font-size: 0.9em;
-    text-align: left;
-}
 
 /* ----------- トップページ　作品一覧の部分 ----------- */
-section#works dl{
+#works div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#works div dl{
     position: relative;
-    float: left;
-    width: 28%;
+    flex-basis: auto;
+    width: 50%;
     height: 180px;
-    margin:20px 2.5% 20px 2.5%;
-    border: 3px solid #9F2500;
     border-radius: 5px;
-}
-
-section#works dt{
-    position: relative;
-    top: 125px;
-    background: #E86E48;
-    opacity: 0.6;
-    color: #fff;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-section#works dl.case01{
-    background:url(../works/img/tenroku.png) no-repeat center 5%;
-    background-size: cover;
+#works dt{
+    background: #EFE096;
+    font-size: 1.2em;
+    padding-bottom: 0.7em;
 }
 
-section#works dl.case02{
-    background:url(../works/img/valentine.png) no-repeat center 15%;
-    background-size: cover;
-}
-section#works dl.case03{
-    background:url(../works/img/pcschool.png) no-repeat center 5%;
-    background-size: cover;
-}
-section#works dl.case04{
-    background:url(../works/img/dentalclinic.png) no-repeat center 5%;
-    background-size: cover;
-}
-section#works dl.case05{
-    background:url(../img/comingsoon.png) no-repeat center center;
+#works dl.case01{
+    background:url(../works/img/tenroku.png) no-repeat;
     background-size: cover;
 }
 
-section#works dd{
+#works dl.case02{
+    background:url(../works/img/valentine.png) no-repeat;
+    background-size: cover;
+}
+#works dl.case03{
+    background:url(../works/img/pcschool.png) no-repeat;
+    background-size: cover;
+}
+#works dl.case04{
+    background:url(../works/img/dentalclinic.png) no-repeat;
+    background-size: cover;
+}
+#works dl.case05{
+    background:url(../img/comingsoon.png) no-repeat;
+    background-size: cover;
+}
+
+
+.ct{
+    background-position: top center;
+}
+.cc{
+    background-position: center center;
+}
+.c5{
+    background-position: center 5%;
+}
+.c10{
+    background-position: center 10%;
+}
+.c15{
+    background-position: center 15%;
+}
+
+#works dd{
     display: block;
     width: 100%;
+    font-size: 1.4em;
     position: absolute;
     bottom: 0;
     margin-inline-start: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-section#works dd a{
-    display: block;
-    background-color: #E86E48;
-    color: #fff;
-    padding: 5px 0;
     line-height: 1.6em;
 }
 
-section#works dd a:hover{
-    text-decoration: underline #fff;
-    text-decoration: underline;
+#works dd a{
+    display: inherit;
+    background-color: #df3500;
+    color: #fff;
+    padding: 5px 0;
 }
 
-section#works dd a::after{
+#works dd a:hover{
+    text-decoration: underline #fff;
+}
+
+#works dd a::after{
     content: '';
     display: inline-block;
     width: 16px;
@@ -232,7 +245,6 @@ section{
 
 section h1{
     font-weight: normal;
-    margin: 0;
 }
 
 section h2{
@@ -243,76 +255,13 @@ section h3{
     font-size: 14px;
 }
 
-/* ----------- 作品紹介・タイトル下 部分 ----------- */
-dl.memo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    display: block;
-    height: 65px;
-    line-height: 65px;
-}
-
-dl.memo dt {
-    width: 100px;
-    padding-left: 0;
-    float: left;
-    color: #fff;
-    text-align: center;
-    background: url(../img/bg_memo01.png) no-repeat 3px 10px;
-}
-
-dl.memo dd{
-    margin: 0;
-    float: left;
-    min-width: 180px;
-    padding-right: 10px;
-}
-
-dl#point{
-    font-size: 1.2em;
-    line-height: 1.8em;
-}
-
-dl#point dt{
-    height: 40px;
-    line-height: 40px;
-    padding-left: 25px;
-    font-size: 1.2em;
-    color: #fff;
-    background: url(../img/bg_point.png) no-repeat 5px center;
-    background-size: contain;
-}
-
-dl#point dd{
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-div#capture{
-    clear: both;
-}
-
-div#capture p{
-    text-align: center;
-    color: #fff;
-}
-
-div#capture img{
-    width:100%;
-    height:450px;
-    object-fit:none;
-    object-position:45% 0;
-    border-radius: 10px;
-}
 
 /* ----- プロフィール・ヒストリー・スキル・ポイント ----- */
 section#prof dl dt{
     margin-left: 1em;
     padding-left: 1em;
     height:50px;
-    font-size: 21px;
+    font-size: 2em;
     letter-spacing: 0.05em;
     line-height: 45px;
     color: #fff;
@@ -348,7 +297,6 @@ dt.skills{
 
 div.it_skills{
     margin-left: 25px;
-    font-size: 1.2em;
 }
 
 div.it_skills dd{
@@ -368,7 +316,6 @@ div.it_skills p{
     margin: 0;
     color: #DF3500;
     font-family: 'Miltonian Tattoo', cursive;
-    font-size: 1.6em;
 }
 
 div.it_skills dd.dtp,dd.web{
@@ -376,17 +323,109 @@ div.it_skills dd.dtp,dd.web{
     line-height: 1.2em;
 }
 
+/* ----------- 作品紹介・タイトル下 部分 ----------- */
+dl.memo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    line-height: 2.5em;
+
+}
+
+dl.memo dt {
+    width: 6.5em;
+    height: 2.6em;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background: url(../img/bg_memo01.png) no-repeat;
+    background-size: contain;
+}
+
+dl.memo dd{
+    margin: 0;
+    padding-right: 15px;
+    margin-bottom: 0.5em;
+}
+
+dl#point{
+    clear: both;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+dl#point dt{
+    width: 5em;
+    height: 2.5em;
+    line-height: 2em;
+    padding-left: 1em;
+    font-size: 1.3em;
+    color: #fff;
+    background: url(../img/bg_point.png) no-repeat;
+    background-size: contain;
+}
+
+dl#point dd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-right: 1.5em;
+    margin-left: 2em;
+    padding-bottom: 1.5em;
+}
+
+div#capture{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3em;
+}
+
+div#capture figure{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+div#capture figure img{
+    display: block;
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    object-position: 50% 0%;
+    border-radius: 6px;
+}
+
+figure a{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+figure a:hover{
+    background-color: #000;
+    opacity: 0.3;
+    border-radius: 6px;
+}
+
 /* ----------- 戻るボタン部分 ----------- */
 div#button{
     clear: both;
-    margin-top: 30px;
+    width: 8em;
+    margin: 0 auto;
 }
 
 div#button a{
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
     color: #fff;
-    font-size: 24px;
+    font-size: 2em;
     text-align: center;
     background: url(../img/bt_back.png) no-repeat center center;
     background-size: contain;
@@ -402,7 +441,6 @@ div#button a:hover{
 footer{
     clear: both;
     padding: 2em;
-    color: #782000;
     background: url(../img/reluxneco.png) no-repeat 98% center;
 }
 
