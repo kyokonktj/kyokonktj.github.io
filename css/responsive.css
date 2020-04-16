@@ -70,7 +70,7 @@
     }
 
     section#works dl{
-        width: 45%;
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -87,13 +87,6 @@
 
     div.it_skills dd{
         width: 100%;
-    }
-
-    dd.dtp p{
-        background-position: right top , 7.5em top;
-    }
-    dd.web p{
-        background-position: right top , 7.5em top;
     }
 
     footer{
@@ -197,14 +190,6 @@
 
     section#works dl{
         width: 45%;
-    }
-
-    dd.dtp p{
-        background-position: right top , 5.7em top;
-    }
-    dd.web p{
-        padding-right: 40%;
-        background-position: right top , 5.7em top;
     }
 }
 
